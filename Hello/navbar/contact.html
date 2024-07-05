@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Image in HTML Style</title>
+    <style>
+        .svg-background {
+            width: 200px;
+            height: 200px;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns=" Site/_Project/3.svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="red" /></svg>');
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+        .body{
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20%;
+            background-color: red;
+        }
+         .h1 .body{
+            justify-content: center;
+            color: white;
+         }
+    </style>
+</head>
+<body>
+    <div class="svg-background"></div>
+    <h1 class="body">welcome to the world</h1>
+</body>
+</html>
